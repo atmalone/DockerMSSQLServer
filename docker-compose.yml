@@ -1,0 +1,9 @@
+version: '3.7'
+services:
+  db:
+    image: mcr.microsoft.com/mssql/server:2017-latest
+    environment:
+      ACCEPT_EULA: Y
+      SA_PASSWORD: 24Seven!117
+    ports:
+      - '1433:1433'
